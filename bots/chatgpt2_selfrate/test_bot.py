@@ -20,3 +20,5 @@ def test_rate_joke(bot: Bot) -> None:
     rating = bot.rate_joke(joke)
     assert isinstance(rating, (int, float)), "Rating is not a number."
     assert 0 <= rating <= 10, "Rating is not within the correct range."
+
+
